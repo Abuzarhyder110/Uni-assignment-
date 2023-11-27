@@ -1,0 +1,106 @@
+#Exercise 1: 
+# Get input from the user
+number = int(input("Enter a number: "))
+
+# Check if the number is even or odd
+if number % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+#Exercise 2 : 
+# Get user input for the year
+year = int(input("Enter a year: "))
+
+# Check if it's a leap year
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(f"{year} is a leap year.")
+else:
+    print(f"{year} is not a leap year.")
+
+#Exercise 3 :
+# Get user input for age
+user_age = int(input("Enter your age: "))
+
+# Check if the age is 18 or above
+if user_age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
+
+#Exercise 4:
+# Simple login system
+
+# Get user input for username and password
+username = input("Enter your username: ")
+password = input("Enter your password: ")
+
+# Check if the entered credentials are correct
+if username == "Abuzar" and password == "12345":
+    print("Login successful")
+else:
+    print("Login failed")
+
+#Exercise 5:
+Get input from the user
+number = float(input("Enter a number: "))
+
+# Check if the number is positive, negative, or zero
+if number > 0:
+    print("The number is positive.")
+elif number < 0:
+    print("The number is negative.")
+else:
+    print("The number is zero.")
+
+#Exercise 7: 
+def calculate_grade(score):
+    if 90 <= score <= 100:
+        return 'A'
+    elif 80 <= score < 90:
+        return 'B'
+    elif 70 <= score < 80:
+        return 'C'
+    elif 60 <= score < 70:
+        return 'D'
+    else:
+        return 'F'
+
+# Example usage
+numeric_score = float(input("Enter the numeric score: "))
+grade = calculate_grade(numeric_score)
+print(f"The corresponding grade is: {grade}")
+
+Exersise:8
+def is_prime(number):
+    if number <= 1:
+        return False
+    for i in range(2, int(number**0.5) + 1):
+        if number % i == 0:
+            return False
+    return True
+
+user_input = int(input("Enter a number: "))
+if is_prime(user_input):
+    print(f"{user_input} is a prime number.")
+else:
+    print(f"{user_input} is not a prime number.")Copy and run
+
+Exercise 9:
+def is_leap_year(year):
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        return True
+    else:
+        return False
+
+user_input = int(input("Enter a year: "))
+
+if is_leap_year(user_input):
+    print("Leap year")
+else:
+    print("Not a leap year")
+
+Exercise 10:
+
+
+
